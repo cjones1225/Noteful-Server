@@ -10,6 +10,6 @@ module.exports = {
     // "password": process.env.MIGRATION_DATABASE_PASS,
     // "ssl": !!process.env.SSL,
     "connectionString": (process.env.NODE_ENV === 'test')
-        ? process.env.TEST_DB_URL
-        : process.env.DB_URL,
+        ? process.env.TEST_DATABASE_URL
+        : process.env.DATABASE_URL,
 }
